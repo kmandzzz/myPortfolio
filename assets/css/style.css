@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body{
+  background: #ffffff;
+}
+
+.heroimage{
+  
+   display: inline-block;
+   position: absolute;
+    justify-content: center;
+    align-items: center;
+}
+section{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p {
+  text-align: center;
+  font-size: 1rem;
+}
+section:nth-child(1){
+  color: #1D212B;
+}
+
+section:nth-child(2){
+  color: #ffff;
+  background: #6166B3;
+}
+
+section:nth-child(3){
+  color: #1D212B;
+}
+
+section:nth-child(4){
+  color: #ffff;
+  background: #6166B3;
+}
+section:nth-child(5){
+  color: #1D212B;
+  background: #ffff;
+}
+section .container{
+  margin: 100px;
+}
+
+section h1{
+  font-size: 60px;
+}
+
+section h2{
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px;
+}
+
+section .cards{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+section .cards .text-card :is-active{
+  background: #dd9207a9;
+  margin: 20px;
+  padding: 20px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+section .cards .text-card h3{
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  
+}
+section .cards .portfolio{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+@media (max-width: 900px){
+  section h1{
+    font-size: 40px;
+  }
+
+  section .cards{
+    flex-direction: column;
+  }
+}
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #6166b3 #f5f5f5;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 15px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #f5f5f5;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #6166b3;
+    border-radius: 8px;
+    border: 3px solid #ffffff;
+  }
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+      
